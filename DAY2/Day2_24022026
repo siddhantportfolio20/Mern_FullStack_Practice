@@ -1,0 +1,52 @@
+#Documentation for theory 
+
+
+* MDN javascript is the official documentation 
+* Modern java script Tutorial 
+
+What is javascript ?? 
+
+1) it is an iterpreted language 
+            |
+            ----- > the code is not compiled or converted in binary before execution 
+2) Why it was created ?? 
+            
+            ----- > To make static HTML / CSS Pages live 
+3) Dynamically Typed 
+
+            ----- > Variable types are determined at the time of execution 
+4) Used in 
+            ----- > FrontEnd , BackEnd (serverside with Nodejs ), Mobileapps(Reactive Native) , Desktop apps and games 
+
+* Note : There is no relation between Java and JavaScript
+
+-----> console.log("Hello world !!!!") ----> prints get on terminal only for developer to see 
+
+
+-----> Running a file in JS we use node script.js where node is the environment 
+
+* Variables 
+        -----> Variables are containers that store values 
+        -----> 3 types : let , var , const
+        -----> Naming process in varibales is called declaration 
+        -----> putting in or assinging any thing to the variable is called as {Initialization} 
+
+
+
+
+Rules in variables : 
+        -----> Must start with letter , underscore(_), or $ sign 
+        -----> Cannot start with number  brackets and keywords 
+        -----> it case sensitive ie . my Name =\ my name 
+        -----> use camel Case conventin : firstName , studentAge 
+
+* Data Types in js : 
+        -----> Numbers 
+                        ------> 25 Intergers , 99.9 decimals , -5 negative numbers , 1000000 large no's , 1.5e3 scientfic notation ,Infinity ,NAN 
+        -----> String 
+                        ------> Representes text data enclosed in quotes , single or double quotes -> "apple" , backticks `${apple}` , empty = " "
+        -----> Boolean 
+                        ------> Represents true or false value 
+        -----> null:- is a special value in JS that represent empty or value unknown  and 
+        -----> undefined :- value is not defined to a variable [declated but nnot initialized] the value can be delibrate but its mostly given by default when vaiable is not initialized 
+        

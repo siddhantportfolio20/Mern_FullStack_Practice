@@ -1,0 +1,19 @@
+ACCIOJOBS
+Functions are set of instructions 
+Blockly Games
+pseduo code 
+
+repeat(1 to 5){
+    
+    repeat(1 to 5){
+        print("*")
+    }
+    next line 
+}
+
+or 
+ repeat(b){
+    print(* x b)
+ }
+
+Q) is there any wbesite where i can read pseduo code for practice complex and the per language ?? 
