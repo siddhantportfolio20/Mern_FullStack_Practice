@@ -1,0 +1,89 @@
+Arithematic operators 
+
+1> +,-,*,/
+
+2> % ----> modulus operators -----> gives reminder it can take 0,1,2
+
+3> ** = exponential 
+
+root 16 can be return as 16 ** 1/2
+
+4> BODMAS in JS is refered as PEMDAS
+_______________________________________________________________________________________________________
+P   |    ()      |    Paranthesis                                                            | high 
+E   |   **       |    exponential                                                            |
+MD  |    *,/,%   |    same priority evaluated in the order iits written (left to right)      |   
+AS  |    +,-     |    addition and substraction                                              | low                
+_______________________________________________________________________________________________________
+
+5> + operator is a used to connect / concatinate stings eg
+
+let str1 = "hello"
+let str2 = "world" 
+let name = "Siddhant "
+let age = 21
+console.log(str1 + " " + str2 )
+console.log("My name is "+name+ "and my age is "+ age)
+
+if there is a string as a number and a number it will concatinate and convert it to string eg: 
+
+"1" + 1         == 11  string 
+"1" + 2 + 2     == 122 string
+"asd" +,-,* 1   == NAN
+
+any operation with not a number gives you NAN 
++ is an exception as it does not convert a string number into a number compared to other operators 
+eg : 1 + '1' = 11 but any other operators eg : 1 - "1" = 0 
+
+"" will be considered as 0 
+----- in js type conversion is done by itself 
+
+
+6> Type conversion
+
+let x = "1"
+let y = "2"
+
+console.log("+x + +y ==")
+console.log(+x + +y) // integer 3 
+
+let age = "21"
+
+console.log("TYPE CONVO")
+console.log(Number(age)) // 21 integer
+console.log(+age) // 21 integer
+console.log(age) // 21 string
+
+
+// Extra info 
+console.log(Number(false)) // 0
+console.log(Number(true)) // 1
+console.log(Number("")) // 0
+console.log(Number(undefined)) // NAN
+console.log(Number(null)) // 0
+
+
+// modify in place 
+
+w = w+2
+console.log(w)
+w = w+5
+console.log(w)
+w += 2 +5
+console.log(w)
+w +=2 
+console.log(w)
+
+let a = 5;
+// here the previous value is returned and then the balur is added 
+let  b = a++ // 5 
+
+// value is added and then returned
+let b = ++add // 6
+
+// note the precedence of increment and decrement operator is higher than operators 
+
+let c = 0;
+clg(2 * ++c)
+
+°C=95​(°F−32)
