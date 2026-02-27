@@ -1,0 +1,53 @@
+comparisons operators compare 2 values and return a boolean (true or false)
+eg > , <, = , <= , >= , == , === , !== 
+
+= vs == vs ===
+assignment operator , both compare operator  difference in [== ] checks both numbers are equal or not and in [===] checks the type also 
+
+
+
+* ==    compares if both the value  are same or not
+        it only checks the value and not the type 
+
+=== compares if both the values 
+
+console.log(3=="3")// true
+console.log(3==="3")// false 
+
+exceptions: 
+
+_____________________________________________
+|category   |truty examples |falsy examples | 
+_____________________________________________
+|boolean    |true           |false          |
+|numbers    |1,2,3..infinity|0 NaN          ||
+|String     |"hello"        |"" (emptystring)||
+|object arr |{},[]          |               ||
+|function   |function(),()=>{}             |
+|special    |               |Null, undefined|
+||||
+_____________________________________________
+
+!== 
+----> compare value if they are not equal also compare types 
+
+!= 
+----> compares values if they are not equal doesnot checks the type 
+
+//not equal to 
+console.log(3!=5)// true 
+console.log(5!=5)//false
+console.log(5!="5")// false
+console.log(5!=="5")// true
+
+//string comparison 
+
+console.log("z","a") // true
+console.log("Glow","Glee") //true
+console.log("Bee">"Be") //true
+console.log("Bee">"bee")// false explanation :- B comes before in Ascii values 
+
+// comparison in different types 
+// when comparing 2 values if any one value is a number JS will convert the other to a number 
+// the string 2 gets connverted into number and then the comparison occurs 
+console.log("2">1) //true 

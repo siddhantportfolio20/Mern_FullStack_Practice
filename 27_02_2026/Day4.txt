@@ -1,0 +1,43 @@
+Math in arithematic operators 
+
+
+Math in Js is a built-in object that provides mathematical constants and functions 
+
+eg : - Math.PI is a constant with a value of 3.14
+
+[-5] ----------- [-4] 
+
+
+1> Math.round()--> Rounds a number to the nearest Integer but 4.4 = 4 and after 4.5 = 5 including 4.5 also 
+
+EG:-
+console.log(Math.round(4.4))// 4
+console.log(Math.round(4.5))// 5
+but for positive the senario changes
+
+console.log(Math.round(-4.5))// -4
+console.log(Math.round(-4.6))// -5
+
+2>  Math.floor :- Rounds the number DOWN to the smallest Integer 
+
+console.log(Math.floor(4.3))// 4
+console.log(Math.floor(4.5))// 4 
+console.log(Math.floor(4.9))//4
+
+
+3> Math.ceil :- Rounds the number UP to the biggest Integer
+
+console.log(Math.ceil(4.4))// 5
+console.log(Math.ceil(4.5))// 5
+console.log(Math.ceil(-4.5))// -4
+console.log(Math.ceil(-4.6))// -4 
+
+4> .tofixed : formats a number to a specified no. of decimal places and return a string 
+
+
+5> ParseInt  Passes a string and returns a integer
+
+
+
+6> ParseFloat : - passes a string and returns a floating point number 
+
