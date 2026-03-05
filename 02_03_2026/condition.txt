@@ -1,0 +1,66 @@
+if statement 
+
+The if statement evaluates the condition in "()" parantheses and if the condition is true it executes the code inside the block 
+
+if (condition){
+
+}
+
+{} --> are called as scope or block 
+if condition is true is executed 
+if condition is false the block is not executed 
+
+
+else statement : 
+The if statement contains an optional else block . it executes when the condition is false 
+
+else if statement :- else if block have multiple condition inside our if statement  
+
+
+let age = 20
+if (age>=18){
+    console.log("Yes")
+}
+else if (age < 100) {
+    console.log("died")
+}
+else {
+    console.log("No")
+}
+
+//if (age>=18) console.log("Not recommened if statement")
+
+
+let year  = "1947"
+if (year>1947){
+    console.log("wrong greater")
+}
+else if (year < 1947) {
+    console.log("wrong less")
+}
+else {
+    console.log("you won")
+}
+
+
+//Question : 
+
+if age between 18 and 150 vote and if age is above 150 died
+
+//Reactjs 
+conditional operators or ternary operators " ? "
+
+syntax : (age>8) ? clg("can vote"): clg("cannot vote")
+
+format : -  condition (?) operator true block : false block
+
+
+(age >= 18) ? console.log("Vote") : console.log("no Vote")
+
+// nested loop using ternary operator
+let message = (age) ? (age >= 18) ? "Vote" : "No Vote" : "user has not enterred valid input"  
+console.log(message)
+
+Note :- 
+1> use "?" operator for simple operation
+2> "?" reduces thee readability of the code prefer if else for complex conditions ssag
