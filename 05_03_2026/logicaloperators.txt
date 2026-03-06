@@ -1,0 +1,43 @@
+
+What are logical operators ?
+
+operators used to compare truthy / falsy values 
+there are 4 logical operators :-
+    || (or)
+    && (and)
+    !(Not)
+    ??(Nullish)  
+
+OR :-   The || finds the first truthy value 
+        evaluates the operator from lleft to right 
+        for each operand is converted into boolean and if its true it stops and returns its value 
+        if all are false it will return the last value 
+        all this steps are also called as short circuit 
+
+
+And :-  finds the first falsy value 
+        evaluates from left to right , converting them into boolean
+        if the result is false it stops and returns the original value 
+        if all operands are true it will return the last value 
+
+Not :-  Converts or reverse the true value to false and return true or false 
+        Its used to change / toggle the boolean values 
+
+Nullish ?? :- This operator returns the first argument if its not null / undefined otherwise it returns the second one 
+                eg:- a??b 
+                                if a is defined then a 
+                                if a isnt defined then b
+
+Note :- Nullish operator is used same as or operator but it does not checks ture and flase value it checks null and undefined values 
+
+
+Nullish vs or :
+                || returns the first truthy value 
+                ?? returns the first defined value 
+
+                i.e || doest not distinguish between flase , 0 , empty string etc they are all false values 
+
+
+
+we cannot use Nullish with other operators 
+

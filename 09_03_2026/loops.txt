@@ -1,0 +1,20 @@
+it is a way to repeat the same code multiple times 
+eg :- for ** , while* , do while 
+
+3 steps for a loop working :-  
+
+start 
+how many times 
+end **
+
+*while 
+Syntax:-
+
+while (condition){
+    loop body
+    
+}
+
+condition the code will keep running till the condition is truthy as soon as the condition is falsy the loop stops 
+
+question : ++i and i++

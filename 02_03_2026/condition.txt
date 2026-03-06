@@ -63,4 +63,7 @@ console.log(message)
 
 Note :- 
 1> use "?" operator for simple operation
-2> "?" reduces thee readability of the code prefer if else for complex conditions ssag
+2> "?" reduces thee readability of the code prefer if else for complex conditions 
+
+flag in js are the variables that consist of false and true 
+eg :- isCouple = false

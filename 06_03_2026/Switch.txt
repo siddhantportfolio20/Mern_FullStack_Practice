@@ -1,0 +1,21 @@
+Switch statement 
+
+Switch replace multiple if checks 
+it gives a more descriptive way to compare value with multiple variants 
+
+Syntax :- 
+
+switch(x){
+    case "value1":
+    break
+
+    case "value2":
+    break 
+    
+    default:
+    break
+}
+
+x : checks strick equality 
+break : Indicates when to stop when condition is met 
+default ;- executes if none of the condition are met 
