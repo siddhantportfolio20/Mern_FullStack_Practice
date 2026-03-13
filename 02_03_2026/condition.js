@@ -1,4 +1,4 @@
-let year = "1947";
+/*let year = "1947";
 if (year > 1947) {
   console.log("wrong greater");
 } else if (year < 1947) {
@@ -8,7 +8,7 @@ if (year > 1947) {
 }
 
 let age = 21;
-/*
+
 if (age) {
   if (age >= 18) {
     console.log("Vote");
@@ -22,6 +22,7 @@ if (age) {
 // please use the below if you only want to execute a single line of block code
 */
 // Reactjs
+let age=21
 (age >= 18) ? console.log("Vote") : console.log("no Vote")
 
 let message = (age) ? (age >= 18) ? "Vote" : "No Vote" : "user has not enterred valid input"  

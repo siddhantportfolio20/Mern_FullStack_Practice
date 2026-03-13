@@ -1,0 +1,25 @@
+functions :-
+        a function is a reuseable block of code designed to perform a specific task 
+        
+        what is the work of functions and why do we use ?? 
+            Reuseability :- write code once and use it multiple times 
+            Organisation :- Breaks the code into multiple smaller managable peices 
+            Maintainability :- fix bugs in one place--> reflects every where 
+            Readability :- Makes code easier to understand 
+What is context
+
+syntax:-
+    function functionName(parameters){
+        //function body
+    }
+    function     :- keyword that tell js to create a function 
+    functionName :- name you give to identfy a function (cammelcase)
+    ()           :- holds parameters (No.of Inputs)
+    {}           :- function body that executes when called 
+
+Naming Rules :- 
+                name should be descriptive 
+                use cammelCase
+                cannot start with a number 
+                cannot contain spaces 
+                

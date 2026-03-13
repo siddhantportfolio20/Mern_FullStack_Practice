@@ -18,3 +18,31 @@ while (condition){
 condition the code will keep running till the condition is truthy as soon as the condition is falsy the loop stops 
 
 question : ++i and i++
+
+
+do while :-
+         it is similar to while loop except the condition checking is done at the end in other words the boady runs first and then we check the condition
+
+Syntax::
+
+        do{
+            "loop body"
+        }while(condition)
+
+
+for loop :- 
+
+Syntax :-
+        for (begin ; condition;step){
+            loop body
+        }
+
+        if(condition)--> run body ---> run step
+
+break and continue
+        used to control the iteration of a running loop
+        break ---> used to break the execution of a loop 
+        continue ---> used to skip the condition that are in the loop after continue
+Note: for vs while :- 
+        use for loop when you know how manny time you want to run 
+        use while loop when you dont know how many times you want to run loop but you know when to end it 
