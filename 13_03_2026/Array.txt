@@ -1,0 +1,15 @@
+Array :- 
+        Arrays are ordered collection that can store multiple values in a single variable
+        these are non primitive data types 
+        can holde mixed values(different data types)
+
+we have primitive and non primitive data types 
+
+Array , object is a non primitive data 
+
+// index out of range gives undefined 
+
+console.log("arr element:-",arr[3])
+//console.log(arr[7]) undefined 
+
+arr[-1] // does not return the last value it gives undefined 

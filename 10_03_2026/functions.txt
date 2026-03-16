@@ -22,4 +22,13 @@ Naming Rules :-
                 use cammelCase
                 cannot start with a number 
                 cannot contain spaces 
-                
+
+
+return statement : 
+            any thing you write after return function it will not be executed 
+            return is also used for storing a value in a variable without prinntinng it 
+            most of the time you will want your function on to return a value rather than displaying it 
+            this is where the return statement is used 
+            retrun statement also woek as break statement for function 
+
+
