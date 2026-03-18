@@ -1,0 +1,22 @@
+What are methods ?
+Note:- methods and function are same , methods are aslo called as functions  
+
+there are 4 arrays methods 
+1> push() 
+2> pop()
+3> unshift
+4> shift
+
+_________________________________________________________________   
+|Methods | Action        | where            | Returns            |
+|________|_______________|__________________|____________________|
+|push    | add           | end              | new length         |   
+|pop     | remove        | end              | removed element    |
+|unshift | add           | begining         | new length         |
+|shift   | remove        | begining         | removed element    |
+|________|_______________|__________________|____________________|
+
+Methods are used for array modification
+
+//Begining :- adding or removing element at the begining we use unshift & shift 
+//End :- adding or removing element at the end we use push & pop 

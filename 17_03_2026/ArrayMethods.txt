@@ -1,0 +1,62 @@
+* slice method 
+    it is an array method used to extract (copy) elements 
+    from an array w/o effecting the original array 
+    returns a new array 
+
+eg :- array = [1,2,3,4]
+
+array.slice(1,2) this will does not effect original array 
+
+slice(start Index , end Index)
+start included , end not included 
+
+splice : 
+
+        it is used to mutate /change the original array 
+        it returns an array of removed elements
+
+        used :- 
+                remove elements from an array 
+                add new elements to an array 
+                replace existing elements
+                do all 3 simultaneously
+
+        Syntax :- 
+                arr.splice(startIndex , delete count , item1,item2,item3....)
+                start point(required) 
+                delete count :- how many elements you want to remove (optional , default from start )
+                elements to add from start index(optional)
+
+
+indexof() 
+        returns the 1st index at which a given element is found or -1 if not present 
+        to find the 1st index of the given element
+
+syntax :- 
+        arr.index of (search Element,from index)
+
+
+includes() 
+            Determines if an away contains a specefic elements returing true or false 
+            same as indexof()
+
+__________________________________________________________________
+|                    |    Infexof     | includes                 |
+|--------------------|----------------|--------------------------|
+|returns             | index or -1    | true or false            |
+|can find Nan        | Note           | yes                      |   
+|checking realability| less relaible  | more relaible            |
+|use case            | to find index  | to see if element exists |
+|----------------------------------------------------------------|
+
+
+concat()
+merges 2 or more arrays into a new array effecting the oringinal array into a new array without effecting the oringinal array 
+
+syntax arr.concat(arr1,arr2,value)
+
+reverse()
+
+        used to reverse the order of the element in an array in 
+        it effect the original array 
+        arr.reverse()
