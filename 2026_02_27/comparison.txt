@@ -6,7 +6,7 @@ assignment operator , both compare operator  difference in [== ] checks both num
 
 
 
-* ==    compares if both the value  are same or not
+==    compares if both the value  are same or not
         it only checks the value and not the type 
 
 === compares if both the values 
@@ -50,4 +50,4 @@ console.log("Bee">"bee")// false explanation :- B comes before in Ascii values
 // comparison in different types 
 // when comparing 2 values if any one value is a number JS will convert the other to a number 
 // the string 2 gets connverted into number and then the comparison occurs 
-console.log("2">1) //true 
+console.log("2">1) //true   

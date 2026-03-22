@@ -60,3 +60,34 @@ reverse()
         used to reverse the order of the element in an array in 
         it effect the original array 
         arr.reverse()
+
+Anothere way to write array is with constructor function
+
+let arr = new Array()
+let fruits = new Array("apple","banana")
+clg((fruits))
+
+let fruits = ["apple","banana","kiwi"]
+
+// shallow copy 
+
+let fruits1 = fruits
+
+clg(fruits1)
+
+shallow copy :- change in the copy effect the original
+
+Deep copy :- creates completely new independent structure 
+
+to make a deep copy 
+
+let fruit2 = JSON.parse(JSON.stringify(fruits1))
+
+to send data to backend we use JSON.stringify()
+and to recieve = JSON.parse()
+
+
+let dataSend = JSON.stringify(fruits)
+let dataReceived =Json.parse(dataSend)
+print all 
+
