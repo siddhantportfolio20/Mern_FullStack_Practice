@@ -31,8 +31,13 @@ What is javascript ??
         -----> Naming process in varibales is called declaration 
         -----> putting in or assinging any thing to the variable is called as {Initialization} 
 
+Types of variables :- 
+                const :- const or constant is a unchanging variable 
+                they can not br reassigned 
+                to store a constant value such as PI , DATE we declar them in capital letters so they are easy to use in multiple places 
+                let :- varubales are reassignable or updateable 
 
-
+                var:- is a global scope         
 
 Rules in variables : 
         -----> Must start with letter , underscore(_), or $ sign 

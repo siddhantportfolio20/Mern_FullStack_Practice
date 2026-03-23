@@ -1,16 +1,21 @@
-const { Agent } = require("http")
 
-console.log("Hello world !!!!")
 
-console.log(1234)
+// console.log("Hello world !!!!")
 
-let sidd = "sidd"
-sidd = "siddhant"
-console.log(sidd)
+// console.log(1234)
 
-console.log("${sidd}")
+// let sidd = "sidd"
+// sidd = "siddhant"
+// console.log(sidd)
 
-let names = "Siddhant";
-let age = 21 
-console.log(`My name is ${names} and My age is ${age}`)
+// console.log("${sidd}")
 
+// let names = "Siddhant";
+// let age = 21 
+// console.log(`My name is ${names} and My age is ${age}`)
+
+// const 
+
+const name = "siddhant" ;
+// name = "sourish"
+console.log(name)

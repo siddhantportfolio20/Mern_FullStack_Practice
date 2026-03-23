@@ -1,0 +1,19 @@
+Scope {}
+        the block of code written in between {} has block Scope 
+
+Types of varibales patterns :- 
+         global and block local 
+
+// Hoisting :- 
+                when the code is getting executed the declaration of the varibale is taken to the top of its scope 
+                function can be called before its declaration when function are hoisted the whole function is taken to the top of its  scope
+
+
+
+_________________________________________________________________________________________________
+|keywords       | scope type      |Block aware    | Redeclare in same scope       |TDZ          |
+|---------------|-----------------|---------------|-------------------------------|-------------|
+|Var            |Functio or global|no             |Yes                            |No(hoisted)  |
+|let            |Block            |Yes            |No                             |Yes          |
+|const          |Block            |Yes            |No                             |Yes          |
+|_______________|_________________|_______________|_______________________________|_____________|
