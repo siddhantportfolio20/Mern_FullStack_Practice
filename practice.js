@@ -30,8 +30,6 @@ switch(marks){
     }
 */
 // short circuit 
-if(21<22&&22>21&& 22>21){
-    console.log("1")
-}
+
 let x = 0 || 20
 console.log(x)
