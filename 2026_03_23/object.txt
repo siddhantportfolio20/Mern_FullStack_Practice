@@ -1,0 +1,36 @@
+What is an object in js ? 
+            An object is a collection of Key - value pairs 
+            eg - 
+            const user = {
+                name : "Armor";
+                age: 18
+                isStudent : true 
+            }
+            here name , age and isStudent = keys
+            'Armor" , 18 , true = values 
+
+Accessing Values 
+        2 methods 
+
+        1. DOt method 
+            console.log(user.name)
+
+        2. Bracket notation  // use when key is dynamic 
+            console.log(user.["age"])
+
+Adding Updating Deleting 
+
+        user.city = "Pune"
+        user.age = 22 
+        delete user.isStudent
+
+this keyword (Important)
+        const user = {
+            name: "Armor" 
+            greet : function(){
+                console.log("Hello" + this.name)
+            }
+        }
+        user.greet(); // Hello Armor
+
+        this refers to current object 

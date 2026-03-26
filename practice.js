@@ -33,3 +33,28 @@ switch(marks){
 
 let x = 0 || 20
 console.log(x)
+console.log(typeof NaN)
+let a = null
+console.log(typeof a)
+
+
+let vowels = "aeiou";
+let aa = "hello";
+let count = 0;
+
+for (let i = 0; i < aa.length; i++) {
+    for (let j = 0; j < vowels.length; j++) {
+        if (aa[i] === vowels[j]) {
+            count++;
+        }
+    }
+}
+
+console.log(count);
+let reversehell=[]
+
+for (let i = aa.length-1 ; i >= 0 ; i--){
+    reversehell.push(aa[i])
+}console.log(reversehell.join(""))
+
+console.log(aa.length)

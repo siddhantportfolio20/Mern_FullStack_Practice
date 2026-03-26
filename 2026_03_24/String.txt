@@ -1,0 +1,50 @@
+What is a String ? 
+            It represents any texted data 
+            eg let str = "Hello" 
+                    or
+            let str = 'Hello'
+            name = world 
+            let str = `Hello $(name)`
+
+\n :- is used for next line 
+
+
+
+// let fruits1 = "fruits \n  *apple \n *banana \n *kiwi"
+// console.log(fruits1)
+
+
+// let str1 = "hello\nworld"
+// let str2 = `hello
+// world`
+
+//if(str1 == str2 ) console.log("they are same ")
+
+// Use of backslck in String
+
+// to print backslack we use \\ double backslash 
+
+//eg : -  clg("backslack :- \\ ")
+
+
+console.log("Hii i\'m  jose Mourinho")
+console.log("Hii i\'m  \"jose Mourinho\"")
+
+
+1> \n   ---> new line 
+2> \\   ---> backslash
+3> \' \"---> quotes
+4> \t   ---> tab 
+
+Note :- all special char start with \ its also called as "escape characters"
+
+
+console.log("Hii i\'m  jose Mourinho")
+console.log("Hii i\'m  \"jose Mourinho\"")
+
+
+
+// ------------------------------------------- tab ------------------------------
+
+console.log("Hi \t I\'m \t jose Mourinho")
+
