@@ -1,4 +1,10 @@
+// Objects are more imp for module 1 mock test 
+// Note :- in js we have symbol as a data type 
+
 What is an object in js ? 
+            objects are a datatype in js , that stores data in the form of key:value pairs 
+            key:Values is also known as properties of object
+
             An object is a collection of Key - value pairs 
             eg - 
             const user = {
