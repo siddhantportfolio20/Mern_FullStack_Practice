@@ -1,0 +1,13 @@
+// to find the ASCHII value for a char 
+
+we use 
+
+char.chatCodeAt(0)
+
+
+if Aschii code is given and then we have to fnd char we use 
+
+
+String.fromCharCode(aschiCode)
+
+
