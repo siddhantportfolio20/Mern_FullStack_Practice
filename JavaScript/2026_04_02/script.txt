@@ -1,0 +1,7 @@
+// Rest operator :- used to combine the arguments in a function with ...args
+//                  It combines the arguments in the form of an array 
+                    Is only used in an function arguments
+                    here the ... will be on a variable 
+// Spread operator :- It Spreas the values to be accessed i.e [1,2,3] to 1,2,3
+                    and in spread operator the ... is applied on an array
+// Note in object we can only assign a key one time 
