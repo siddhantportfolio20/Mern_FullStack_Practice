@@ -124,7 +124,18 @@
 
 // console.log(productTitle , productPrice)
 
-
+// complex object destructing 
+// let employee = {
+//     id : 101,
+//     address : {
+//         city:"Pune",
+//         state:"Maharashtra"
+//     }
+// }
+// let {address :{city,state}} = employee;
+// console.log(city)
+// console.log(state)
+// console.log(address) // undefined 
 
 //////   task 1 create a groupby function according to city 
 // let people = [
