@@ -35,10 +35,24 @@ Types of variables :-
                 const :- const or constant is a unchanging variable 
                 they can not br reassigned 
                 to store a constant value such as PI , DATE we declar them in capital letters so they are easy to use in multiple places 
-                let :- varubales are reassignable or updateable 
+                let :- varubales are reassignable or updateable but cannot redeclear    
 
-                var:- is a global scope         
+                var:- is a global scope , we can redeclare but cannot reassign
+                
+                const:-  we cannot reassigned or redeclare 
+                         const can be updated 
 
+                eg of :- reassign 
+                        let b = 5 
+                        b = 4
+
+                        redeclare :- 
+                        let b = 5
+                        let b = 4
+
+                        updated :- 
+                        let b = [1,2,3,4]
+                        b[0]=1
 Rules in variables : 
         -----> Must start with letter , underscore(_), or $ sign 
         -----> Cannot start with number  brackets and keywords 
