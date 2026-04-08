@@ -307,3 +307,28 @@ let number = arr %2 === 0
 let index = arr.indexOf(number)
 arr.splice(index,1)
 console.log(arr)
+
+
+let num = 5.247845
+console.log(".toFixed")
+console.log(num.toFixed(1))
+console.log(num.toFixed(2))
+console.log(num.toFixed(3))
+console.log(num.toFixed(4))
+console.log(num.toFixed(5))
+console.log(num.toFixed(6))
+console.log(num.toFixed(7))
+console.log(num.toFixed(8))
+
+let a = " "
+let b = "1"
+
+console.log(Number(a))
+
+console.log("parseInt")
+console.log(parseInt("44"))
+console.log(parseInt("44.45"))
+console.log(parseInt("-44.45"))
+console.log(parseInt(34))
+
+console.log(parseFloat("34"))
