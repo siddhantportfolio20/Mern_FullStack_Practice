@@ -1,0 +1,21 @@
+
+┌─────────┬─── ┬─── ┬─── ┐
+│ (index) │ 0  │ 1  │ 2  │
+├─────────┼─── ┼─── ┼─── ┤
+│ 0       │ 00 │ 01 │ 02 │
+│ 1       │ 10 │ 11 │ 12 │
+│ 2       │ 20 │ 21 │ 22 │
+└─────────┴───-┴───-┴───-┘
+
+for accessing the rows 
+------- rows i is constant
+
+for accessing the columns
+------- columns j is constant
+
+for accessing the diagonals from left top 
+------- i and j are same 
+
+for accessing the diagonals from right top 
+------- i+j = 2 , this will be for 3x3 matrix
+        so we can write this as i+j

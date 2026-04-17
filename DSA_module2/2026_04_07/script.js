@@ -92,3 +92,61 @@ for (let i = 1 ; i< n ;i++){
     }console.log(row)
 }
 
+// let n = 4
+// let row =""
+// for(let i =0 ; i<=n ; i++){
+
+//     for(let s = 0; s < n-i ;s++){
+//         row+=" "
+//     }
+//     for(let j = 0 ; j < 2*i-1 ; j++){
+//         row+="*"
+//     }row += "\n"
+// }
+// let w=4
+
+// for(let i = w-1 ; i>=1;i--){
+    
+//     for(let s = 1; s <= w-i ;s++){
+//         row+=" "
+//     }
+//     for(let j = 1 ;j <= 2*i-1;j++){
+//         row+="*"
+//     }row +="\n"
+// }console.log(row)
+
+
+// task 2 
+//**** 
+//*  *
+//*  *
+//**** 
+
+// for (let i = 0;i<=n;i++){
+//     let row=""
+//     for(let j=0;j <= n;j++){
+//         if(i == 0 || i == n || j==0 || j==n){
+//             row+="*"
+//         }else{
+//             row+=" "
+//         }
+
+//     }console.log(row)
+// }
+
+// let w = 4
+// for(let i = w-1 ; i>=1;i--){
+//     let row=""
+//     for(let s = 1; s <= w-i ;s++){
+//         row+=" "
+//     }
+//     for(let j = 1 ;j <= 2*i-1;j++){
+//         row+="*"
+//     }
+//     for(let s = 1; s <= w-i ;s++){
+//         row+=" "
+//     }
+//     for(let j = 1 ;j <= 2*i-1;j++){
+//         row+="*"
+//     }console.log(row)
+// }
