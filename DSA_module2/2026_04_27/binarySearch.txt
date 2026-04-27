@@ -1,0 +1,22 @@
+// things required for binary search 
+1. sorted 
+2. 3 pointers left , mid , right 
+
+
+steps: - 
+
+1. check if target === mid 
+2. check if target > == mid 
+3. check if target < == mid
+
+
+time complextiy : 
+     step 1 = n/2
+     step 2 = n / 4
+     step 3 = n/ 2^k
+
+    so TC = O(log n)
+
+Note : if there are 1000 elemments and target does not exits 
+        Linear search will do 1000 comparison
+        Binary search will do 10 comparison
