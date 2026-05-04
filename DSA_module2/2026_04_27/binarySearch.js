@@ -65,7 +65,30 @@ console.log(firstOccuranceElement(arr,target))
 
 
 // if the target is not present find the left most index where it should be inserted in the array 
-let arr1 = [1,2,3,5,6,7]
-let target = 4 
+// let arr1 = [1,2,3,5,6,7]
+// let target = 4 
 // ouptu ==> 3 this is the index where the element should be inserted 
 
+let arr1 = [1,2,3,5,6,7];
+let target = 4;
+
+function searchInsert(arr, target) {
+    let left = 0;
+    let right = arr.length - 1;
+
+    while (left <= right) {
+        let mid = Math.floor((left + right) / 2);
+
+        if (arr[mid] === target) {
+            return mid;
+        } else if (arr[mid] < target) {
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+
+    return left;
+}
+
+console.log(searchInsert(arr1, target));

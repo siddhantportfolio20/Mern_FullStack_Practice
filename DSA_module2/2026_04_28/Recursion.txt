@@ -1,0 +1,15 @@
+Recursion :- Called as when a function called itself 
+
+Defination :- when a function called itself 
+              Base case :- 
+                        condintion when the answer is known directly and recursion stops 
+              Recursion case :- the part where a function calls itself
+
+
+Backtracking is always done after recursive function 
+
+function func(){
+    clg("hello")
+    func()
+}
+func()
