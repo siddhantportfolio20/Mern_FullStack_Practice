@@ -1,0 +1,44 @@
+// Merge Sort
+
+1. Diving the arrays to get singular elements 
+2. Merging your divided arrays into sorted arrays 
+
+[-6,20,8,-2,4]
+
+divide:- 
+[-6,20]   | [8,-2,4]
+[-6] [20] | [8] [-2,4]
+[-6] [20] | [8] [-2] [4]
+
+//Merge
+
+[-6,20]  | [-2,4,8]
+
+[-6,-2,4,8,20]
+
+
+1. [-6][20]=[]
+    a. 1St check if L & R are not empty 
+    b. we compare 1St elements of each array and push the smaller into the result 
+    [][20]=> [-6]
+    here L is empty push result of elements inside result 
+2. [8] [-2,4] = []
+    a. L & R are not empty
+    b. -2 < 8 --> [-2]
+        [8] [4] -> [-2]
+    a.L & R are not empty
+    b. 4 < 8 -> [-2,4]
+        [8] [] -> [-2,4]
+    a. R is empty -> push L -> [-2,4,8]
+
+3.[-6,20] [-2,4,8] ->[]
+    a.-2>-6-->[-6]
+    [20] [-2,4,8] -> [-6]
+    b.-2<20 --> [-6,-2]
+    [20] [4,8] --> [-6,-2]
+    c.4<20--> [-6,-2,4]
+    [20] [8] --> [-6,-2,4]
+    d.8<20-->[-6,-2,4,8]
+    [20] [] --> [-6,-2,4,8]
+    R is empty push L
+    [-6,-2,4,8,20]
