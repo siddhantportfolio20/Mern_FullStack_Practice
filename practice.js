@@ -690,3 +690,11 @@ for (let i = 0 ; i< a.length ; i++){
         return "Yes"
     }
 }
+
+
+for(let i = 5; i<6;i++){
+    for(let j=1;j<11;j++){
+        let res = i*j
+        console.log(`${i} x ${j} = ${res}`)
+    }
+}

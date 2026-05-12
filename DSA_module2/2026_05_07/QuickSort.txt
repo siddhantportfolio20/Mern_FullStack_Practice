@@ -1,0 +1,47 @@
+Quick sort
+
+the time complex depend on what is the pivot element 
+
+1. Identify the pivot element 
+    a. 1st element
+    b. last element 
+    c. random element 
+    d. median , middleelement etc 
+2. Put everything thats smaller than the pivot element 
+ into left array and every thing greater on right array 
+
+3. Repeat the process for the individual Left and right till you have an array of length 1 
+
+4. Repeat concatenate left right pivot till 1 sorted element remains 
+
+5. when sorted this is the worst algorithms
+
+
+eg:- 
+
+[-6,20,8,-2,4]
+
+step 1:- Identify the pivot element 
+here the the last element of every array 
+
+step 2:-  p = [4]
+        left = [-6,-2]
+        right = [20,8]
+step 3 :- now in left array 
+        p = [-2]
+        left = [-6]
+        
+        p = [8]
+        right = [20]
+
+Note :- smaller elemnnts will go to the left side and larger elements will go to right side of the element
+
+
+
+// one more approch for Quick sort Inplace 
+
+// ================== INPALCE QUIICK SORT
+
+1. if a[j] < p --- > i ++ , swap (a[i],a[j]) j++
+
+2 if a[j] > p  j++

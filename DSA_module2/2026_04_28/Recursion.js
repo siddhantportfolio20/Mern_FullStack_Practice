@@ -1,16 +1,16 @@
-// function countDown(n){
-//     // Base case Very Important
-//     if(n==0){
-//         return
-//     }
-//     console.log(n)
-//     // Recrusive function
-//     countDown(n-1)
+function countDown(n){
+    // Base case Very Important
+    if(n==0){
+        return
+    }
+    console.log(n)
+    // Recrusive function
+    countDown(n-1)
 
-//     // backtracking 
-//     console.log("hello",n)
-// }
-// countDown(5)
+    // backtracking 
+    console.log("hello",n)
+}
+countDown(5)
 
 
 // function sumofN(n){
