@@ -59,16 +59,16 @@ let n =5
 
 //=================== Solution ==============
 
-for(let i = 0 ; i < n ; i++){
-    let row = ""
-    for(let s = 0; s < n-i-1 ;s++){
-        row+=" "
-    }
-    for(let j = 0 ; j < 2 * i+ 1;j++){
-        row+="*"
-    }
-    console.log(row)
-}
+// for(let i = 0 ; i < n ; i++){
+//     let row = ""
+//     for(let s = 0; s < n-i-1 ;s++){
+//         row+=" "
+//     }
+//     for(let j = 0 ; j < 2 * i+ 1;j++){
+//         row+="*"
+//     }
+//     console.log(row)
+// }
 
 // ================ Question 5 =====================
 
@@ -87,23 +87,65 @@ for(let i = 0 ; i < n ; i++){
 
 // ============= Solution =======================
 
-let  matrix = [ 
+// let  matrix = [ 
+//   [1, 2, 3], 
+//   [4, 5, 6], 
+//   [7, 8, 9] 
+// ] 
+// for(let i = 0 ; i < matrix.length ; i++){
+//     let sum = 0
+//     for(let j = 0 ; j < matrix.length; j++){
+//         sum += matrix[i][j]
+//     }
+//     console.log("Row sums:- ", sum)
+// }
+
+// for(let i = 0 ; i < matrix.length;i++){
+//     let sum = 0
+//     for(let j = 0 ; j < matrix.length ; j++){
+//         sum += matrix[j][i]
+//     }
+//     console.log("Column sums:- ", sum)
+// }
+
+
+//Q6. Transpose Matrix 
+// Given an m x n matrix, print its transpose n x m. 
+// Input 
+// matrix = [ 
+//   [1, 2, 3], 
+//   [4, 5, 6] 
+// ] 
+ 
+// Output 
+// [ 
+//   [1, 4], 
+//   [2, 5], 
+//   [3, 6] 
+// ]
+
+
+
+
+let matrix = [ 
   [1, 2, 3], 
-  [4, 5, 6], 
-  [7, 8, 9] 
-] 
-for(let i = 0 ; i < matrix.length ; i++){
-    let sum = 0
-    for(let j = 0 ; j < matrix.length; j++){
-        sum += matrix[i][j]
+  [4, 5, 6] 
+]
+
+let transpose = []
+
+for(let i = 0; i < matrix[0].length; i++) {
+
+    transpose[i] = []
+
+    for(let j = 0; j < matrix.length; j++) {
+
+        transpose[i][j] = matrix[j][i]
+
     }
-    console.log("Row sums:- ", sum)
 }
 
-for(let i = 0 ; i < matrix.length;i++){
-    let sum = 0
-    for(let j = 0 ; j < matrix.length ; j++){
-        sum += matrix[j][i]
-    }
-    console.log("Column sums:- ", sum)
-}
+console.log(transpose)
+
+
+

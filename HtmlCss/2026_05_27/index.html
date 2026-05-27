@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .dashboard{
+            display: grid;
+             grid-template-columns: 200px  200px  100px;
+            /*
+            grid-template-columns: 200px  200px  100px;
+            
+            grid-template-columns: repeat(2,200px);
+            grid-template-columns: minmax(200px,1fr);
+            grid-template-rows: 100px 100px 100px;
+            grid-template-rows: 1fr 2fr 1fr;
+            */
+            grid-template-rows: repeat(2,70px);
+            grid-template-areas: 
+                "top top top"
+                "side main main"
+                "side stats stats"
+                "bottom stats stats"
+            ;
+            gap: 10px;
+        }
+        .Top{
+            background: red;
+            grid-area: top;
+        }
+        .side{
+            background: green;
+            grid-area: side;
+        }
+        .main{
+            background: yellow;
+            grid-area: main;
+        }
+        .stats{
+            background: bisque;
+            grid-area: stats;
+        }
+        .footer{
+            background: blue;
+            grid-area: bottom;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="Top">Top</div>
+        <div class="side">side</div>
+        <div class="main">main</div>
+        <div class="stats">stats</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

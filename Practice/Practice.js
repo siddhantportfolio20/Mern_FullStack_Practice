@@ -8,7 +8,7 @@ console.log(a)
 
 // use if else for grading
 
-let marks = 40
+let marks = 80
 
 if (marks>=90 && marks<=100){
     console.log("Grade A")

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            
+            grid-template-areas: 
+                "one one"
+                "two three"
+                "empty four"
+                
+            ;
+            gap: 10px;
+            grid-template-rows: 25px 25px 25px;
+            
+        }
+        .one{
+            background: rgb(74, 74, 237);
+            color: aliceblue;
+            grid-area: one;
+            border-radius: 5px;
+            
+            border: 3px solid rgb(98, 98, 224);
+        }
+        .three{
+            background: rgb(74, 74, 237);
+            color: aliceblue;
+            grid-area: three;
+            border-radius: 5px;
+            border: 3px solid rgb(98, 98, 224);
+        }
+        .two{
+            background: rgb(74, 74, 237);
+            color: aliceblue;
+            grid-area: two;
+            border-radius: 5px;
+            border: 3px solid rgb(98, 98, 224);
+        }
+        .four{
+            color: aliceblue;
+            background: rgb(74, 74, 237);
+            grid-area: four;
+            border-radius: 5px;
+            border: 3px solid rgb(98, 98, 224);
+        }
+        .empty{
+            color: aliceblue;
+            background: white;
+            grid-area: empty;
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="one">One</div>
+        <div class="three">Three</div>
+        <div class="two">Two</div>
+        <div class="four">Four</div>
+        <div class="empty"></div>
+    </div>
+</body>
+</html>

@@ -68,3 +68,4 @@ function selectionSort(arr){
 let arr=[-6,20,8,4,-2];
 selectionSort(arr);
 console.log(arr); */
+

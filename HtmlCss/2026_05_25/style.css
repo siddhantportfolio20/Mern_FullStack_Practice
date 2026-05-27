@@ -1,0 +1,61 @@
+/*   vh is view -height i.e it is relavtive to the view height of the page
+     vw is view-weight i.e it is relavtive to the view width of the page*/
+.box{
+            height: 300px;
+            width: 300px;
+            background-color: pink;
+            padding: 10px;
+            border: 10px solid black;
+            /*margin: 30px;*/
+            box-sizing: border-box;
+        }
+
+        /* content ; thinfs inside the box
+            padding: space b/w content and border
+            border : the line surrounding paddinng and content 
+            margin : space outside the border*/
+.box2{
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+        
+button{
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 20px;
+            /* how to make circle using css*/
+            /*border-raduis : 50%*/
+            padding: 20px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            top: 20%;
+            
+        }
+        /* content-box : the final size depends on the padding and border 
+            (its added outside the box)
+           border-box : the final size includes the padding and border */
+.box3{
+            height: 100px;
+            width: 100px;
+            background: pink;
+            /* display: block;
+            display: inline;
+            display: inline-block; */
+            margin-right: 20px;
+            padding: 50px;
+        }
+        /*display : block   
+            starts on a new line , takes full width by default 
+            width and height can be set 
+            
+          display : inline;
+            stays in the same line , width and height does not apply , 
+            used for short peices of text 
+
+          display : inline-block;
+            stays in line and you can assign height and width 
+
+          display : none
+            remove from DOM 
+        */

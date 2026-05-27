@@ -1,0 +1,5 @@
+position static : default value , element stays in normal position 
+position relative : element moves relative to its normal position (original positionn is reserved)
+position absolute : element moves relative to its parent position (original space is removed)
+position fixed  : stays on the same place while scrolling 
+position sicky  : scrolls to a fixed position 

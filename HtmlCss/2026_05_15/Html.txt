@@ -1,0 +1,14 @@
+Figma software for making design 
+awwwards.com best website development 
+
+
+what is a markup language 
+assigning a tag to the website components 
+
+use seo optimized semantic tags for ranking website onn google 
+SEO optimization
+
+div is not a semantic tag
+
+semantic tags ;- 
+header , main :- section , footer 
