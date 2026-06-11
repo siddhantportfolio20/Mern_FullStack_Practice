@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*descendent selector be carefull when you use this because it gives styleiing for all the elements with p */
+        .card p{
+            color: blueviolet;
+        }
+        /* h3 + p if this is there it target its next p element */
+        h3 + p{
+            color: purple;
+        }
+        /*child selector : direct children bolds only the p elements that are inside the combination class*/
+        #combination > p{
+            font-weight: bold;
+        }
+        h3~p{
+            border-left: 3px solid lightgray;
+            padding-left: 8px ;
+        }
+    </style>
+</head>
+<body>
+    <section id="combination">
+        <h2>Combinator</h2>
+        <div class="card">
+            <h3>Card Title</h3>
+            <p>Card description inside</p>
+            <button class="primary-button">Action</button>
+        </div>
+        <div class="card">
+            <h3>Another Card</h3>
+            <p>More content</p>
+            <button>Secondary Action</button>
+
+        </div>
+        <p>Para Outside the card</p>
+        <h3>Heading 3 tag</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed natus sunt nulla ea suscipit? Impedit, maiores amet praesentium aperiam deserunt quidem cumque esse facilis reprehenderit quo nihil minus, est obcaecati.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus omnis, nemo repellat perspiciatis cumque consequuntur, exercitationem sapiente dignissimos, ea ullam! Sint numquam iste vitae, magnam veritatis tempora dolores voluptate!</p>
+        
+        <h3>Heading 3 tag</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed natus sunt nulla ea suscipit? Impedit, maiores amet praesentium aperiam deserunt quidem cumque esse facilis reprehenderit quo nihil minus, est obcaecati.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus omnis, nemo repellat perspiciatis cumque consequuntur, exercitationem sapiente dignissimos, ea ullam! Sint numquam iste vitae, magnam veritatis tempora dolores voluptate!</p>
+        
+    </section>
+</body>
+</html>

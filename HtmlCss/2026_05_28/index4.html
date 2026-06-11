@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .badge-btn{
+            position: relative;
+            padding-right: 32px;
+        }
+        .badge-btn::after{
+            content: "2";
+            position: absolute;
+            top: -7px;
+            right: -7px;
+            background:  red;
+            border-radius: 50%;
+            padding: 2px 5px;
+            color: antiquewhite;
+        }
+        .quote{
+            position: relative;
+            padding-left: 20px ;
+        }
+        .quote::before{
+            content: "\201C";
+            position: absolute;
+            font-size: 32px;
+            top :0px;
+            left: 0px;
+            color: gray;
+        }
+        .first-line-demo::first-line{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <section id="psuedo-elements">
+        <h2>psuedo-elements</h2>
+        <button class="badge-btn">Notifications</button>
+        <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa commodi voluptate voluptatibus ea similique! In dolore magni officia repellat sit ipsum praesentium id deserunt voluptates excepturi! Exercitationem odit consectetur nihil!</p>
+        <p class="first-line-demo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas suscipit amet rem quae illo libero minus doloribus illum iste, iure, id, error mollitia sint. Laboriosam dignissimos necessitatibus aliquid enim.</p>
+
+
+    </section>
+</body>
+</html>
