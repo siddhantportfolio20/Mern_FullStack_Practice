@@ -68,7 +68,7 @@
 
 
 
-// ----------------------------  Event Bublling  --------------------------------------
+// ----------------------------  Event Bublling (false) --------------------------------------
 // Defination ;- Event Bubbling is the process where an event starts from the element that 
 // was clicked (or triggered) and then moves upward through its parent elements.
 
@@ -78,6 +78,69 @@ let form = document.querySelector('form')
 let div = document.querySelector("div")
 let p = document.querySelector('p')
 
-form.addEventListener("click",()=> alert("form is clicked"))
-div.addEventListener("click",()=> alert("div is clicked"))
-p.addEventListener("click",()=> alert("p is clicked"))
+
+// // function eventBubbling(){
+// form.addEventListener("click",()=> alert("form is clicked"))
+// div.addEventListener("click",()=> alert("div is clicked"))
+// p.addEventListener("click",()=> alert("p is clicked"))
+// // }
+
+// ------------------------ Event Capturing (true) ---------------------------------------------
+// Event Capturing is the process in which an event starts from the document (or parent elements) 
+// and moves downward toward the element that triggered the event.
+
+
+// form.addEventListener("click",()=> alert("form is clicked"),true)
+// div.addEventListener("click",()=> alert("div is clicked"),true)
+// p.addEventListener("click",()=> alert("p is clicked"))
+
+
+// --------------------- Stop propagation
+// for stoping both event capturing and event bubbling
+
+// function eventBubbling(){
+//     form.addEventListener("click",(e)=>{
+//         e.stopPropagation()
+//         alert("You are in Form")
+//     })
+//     div.addEventListener("click",(e)=>{
+//         e.stopPropagation()
+//         alert("You are in div")
+//     })
+//     p.addEventListener("click",(e)=>{
+//         e.stopPropagation()
+//         alert("You are in p")
+//     })
+        
+
+// }
+
+// eventBubbling()
+
+
+
+// ----------------------- Task -------------------------
+// when I click on add new item a new li element should be added in the list for example 
+
+let ul = document.querySelector("ul")
+let button = document.querySelector("button")
+let count = 0
+
+button.addEventListener("click",()=>{
+    count++
+    let li = document.createElement("li")
+    li.textContent = `New item ${count}`
+    ul.append(li)
+    
+})
+
+
+
+
+// ------------------------- Event Delegation ---------------------
+
+ul.addEventListener("click",(e)=>{
+    if(e.target.tagName == "LI"){
+        e.target.classList.toggle("done")
+    }
+})

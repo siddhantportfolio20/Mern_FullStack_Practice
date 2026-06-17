@@ -1,0 +1,21 @@
+div{
+    display: none;
+}
+.modal{
+
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    margin: 200px;
+    background: pink;
+}
+
+.invalid{
+    border-color: brown;
+}
+#error{
+    color: red;
+}
