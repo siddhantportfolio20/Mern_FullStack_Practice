@@ -121,3 +121,216 @@
 // let user1 = new BankAccount("Siddhant",10000)
 // user1.deposite(5000)
 // console.log(user1);
+
+
+
+// //----------------------- Encapsulationn --------------------------------
+// // encapsulation is hiding internal implementation detials and exposing only necessary interfaces 
+// // .Private fields enforce true encapsultaion by making fields genuinely inaccessible from outside
+
+// // Public vs Private 
+
+// class DataComparison{
+//     #privateData = "I am private Data"
+//     publicData = "I am public Data"
+
+//     #privateMethod(){
+//         console.log("I am private Method ");
+//     }
+//     publicMethod(){
+//         console.log("I am public Method");
+//         this.#privateMethod()
+//     }
+//     testAccess(){
+//         this.#privateMethod()
+//         this.publicMethod()
+//         console.log(this.#privateData);
+//         console.log(this.publicData);
+//     }
+// }
+
+// const obj = new DataComparison()
+// // console.log(obj.#privateData);// Private field '#privateData' must be declared in an enclosing class
+// // obj.publicMethod()
+// // obj.#privateMethod()// Private field '#privateData' must be declared in an enclosing class
+// obj.testAccess()
+
+// // Not Imp but you should kknow this 
+
+// class Card{
+//     constructor(title, content){
+//         this.title = title;
+//         this.content = content;
+//     }
+//     render(parentId){
+//         this.element = document.createElement("div")
+//         this.element.className = "card"
+//         this.element.innerHTML = `<h3>${this.title}</h3> <p>${this.content}</p>`
+//         const parent = document.getElementById(parentId)
+//         parent.appendChild(this.element)
+//     }
+//     remove(){
+//         this.element.remove()
+//     }
+// }
+
+// const card1 = new Card("Title 1", "lkasjdljsdf;jl;sfajdfkdjsdjfa;jk")
+// const card2 = new Card("Title 2","ashdffkjhasdkjlhsfdljkhfjsdbf")
+// card1.render("container")
+// card2.render("container")
+
+
+// // ------------------------- Inheritance -------------------------------------
+// Allows classes to reuse code from the parent classes by inheriting their properties 
+
+// class Animal{
+//     constructor(name){
+//         console.log("Animal Constructor (Parent)");
+//         this.name = name;
+
+//     }
+//     speak(){
+//         console.log(`${this.name} makes a sound`);
+//     }
+    
+// }
+// class Dog extends Animal{
+//     constructor(){
+//         super() // Super Keyword
+//         console.log("Dog Constructor (child)");
+//     }
+    
+//     bark(){
+//         console.log(`${this.name} barks`);
+//     }
+// }
+// const dog = new Dog("buddy")
+// dog.bark()
+// dog.speak()
+
+// // super() : the super() keyword calls the parent constructor and must be
+// //  called before accessing this in child class 
+
+// class Person{
+//     constructor(name , age){
+//         this.name = name;
+//         this.age = age
+//     }       
+
+// }
+// class Student extends Person {
+//     constructor(name,age,gender){
+//         super(name , age)
+//         this.gender
+//     }
+//     study(){
+//         console.log(`${this.name} is studying`);
+//     }
+// }
+// class Showmarks extends Student{
+//     constructor(name,age,gender,marks){
+//         super(name,age,gender)
+//         this.marks = marks
+//     }
+//     getmarks(){
+//         console.log(`${this.name} this is your marks : ${this.marks}`);
+//     }
+// }
+// const student1 = new Showmarks("Siddhant",23,"Male",90)
+// student1.study()
+// student1.getmarks()
+
+
+// // another example for child accessing students methods 
+
+// class Phone{
+//     #price
+//     constructor(brand,price) {
+//         this.brand = brand
+//         this.#price = price
+//     }
+//     call(){
+//         console.log("Is calling");
+//     }
+//     // getting the acces for price in child class 
+//     getPrice(){
+//         return this.#price
+//     }
+
+// }
+// class SmartPhone extends Phone{
+//     constructor(brand,price){
+//         super(brand,price)
+//     }
+//     takePhoto(){
+//         console.log(`${this.brand} takes Photo`);
+//         console.log(`price of the phone is ${this.getPrice()}`);
+//     }
+// }
+
+// const phone1 = new SmartPhone("samsung",150000)
+// phone1.call()
+// phone1.takePhoto()
+
+
+// //-------------------------------- Abstraction ----------------------
+// // Abstraction hides commplex implementation detials and exposes the 
+// // necessary functionality
+
+
+// class CofeeMachine{
+//     #boilwater(){
+//         console.log("water is boiling");
+//     }
+//     #brew(){
+//         console.log("Brewing");
+//     }
+//     makeCofee(){
+//         this.#boilwater()
+//         this.#brew()
+//         console.log("Coffee is ready");
+//     }
+// }
+
+// const machine = new CofeeMachine()
+// machine.makeCofee() // here we only gave the access on making the coffe not boiling the water 
+// // in abstraction there is no security only final ouput matters 
+
+// // ------------------------- Polymorphism --------------------
+// // Polymorphism : Method Overriding
+// // Allows objects of differnet classes to be treated as obj's of a common parent class while maintaining their specefic behaviour 
+// class Animal{
+//     makeSound(){
+//         console.log(" Some Sound");
+//     }
+// }
+// class Dog extends Animal{
+//     makeSound(){
+//         console.log("Woof");
+//     }
+// }
+// class Cat extends Animal{
+//     makeSound(){
+//         console.log("Meow");
+//     }
+// }
+
+// const dog = new Dog()
+// dog.makeSound() // Woof
+// let cat = new Cat()
+// cat.makeSound() // Meow 
+
+// // EG : 2 
+// class Vehicle{
+//     start(){
+//         console.log("Engine is starting");
+//     }
+// }
+// class Car extends Vehicle{
+//     start(){
+//         super.start()
+//         console.log("Car is running");
+//     }
+// }
+// let car = new Car()
+// car.start()
