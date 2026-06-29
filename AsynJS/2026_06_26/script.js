@@ -161,7 +161,7 @@
 
 
 
-function getCheese(callback){
+function getCheese(){
     return new Promise((resolve,reject)=>{
 
         setTimeout(()=>{
@@ -171,7 +171,7 @@ function getCheese(callback){
         },2000)
     })
 }
-function makeDough(cheese,callback){
+function makeDough(cheese){
     return new Promise((resolve,reject)=>{
 
         setTimeout(()=>{
@@ -182,7 +182,7 @@ function makeDough(cheese,callback){
     })
 
 }
-function getPizza(dough,callback){
+function getPizza(dough){
     return new Promise((resolve,reject)=>{
 
         setTimeout(()=>{
