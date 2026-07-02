@@ -180,9 +180,3 @@
 //     render(e.target.value,Api_Url)
 
 // })
-
-let  nums = [100,4,200,1,3,2]
-nums.sort((a,b)=>{
-    return a-b
-})
-console.log(nums);

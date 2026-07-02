@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Loops</title>
+</head>
+<body>
+    <h1>Event looping</h1>
+    // // --------------------- Event loops ---------------
+    <br>
+// // checks if the call Stack is empty or not and then executes setTimeout
+<br>
+// // Task Queue
+<br>
+// // Microtask Queue
+<br>
+// // call Stack 
+<br> 
+<h1> JavaScript is a Single thread language</h1>
+<h3>But we can use Asyn operation but to web api or browser </h3>
+<br>
+// 1. JS runs strictly on a single thread (i.e perform 1 task at a time) but it is able to perform 
+<br>
+Answer :-  async operations because of the runtime environement (browser or Node.js is multi threaded)
+// Js does not handle time consuming tasks like network requests, timers , filesystem etc on its own thread,
+// it delegates these tasks to hosting environment , which handles them in background
+<br>
+// 2. CallStack -> this tracks what func is currently executing . It handles sync code on the single main thread,
+// following Lifo (last in first out ) structure
+<br>
+// 3. Web API's / Node.js API's -> these are background environment provided by the browse or Node.js they run seperate native threads 
+// to handle tasks like fetch(), setTimeout()etc once the background API is completed its task it moves the attached callback functon 
+// to its respective queue 
+<br>
+// 4. Task queue -> handles large peices of work eg setTimeout, setInterval , UI rendering events etc
+<br>
+// 5. Micro task queue -> handles smaller and urgent tasks that need to run immediately eg Promises 
+// Micro task queue has more preference than Macro Task queue ->callbacks inside marco tasks  will wait 
+// untill everything inside micro task queue has completed its execution 
+<br>
+// 6. EventLoop -> carries out the whole above process by checking continously if the call stack is empty or not 
+
+<script src="script.js"></script>
+</body>
+</html>
