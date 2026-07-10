@@ -1,0 +1,31 @@
+(1) What is react ?? 
+-> React is a JS library for building user interfaces using reusable components.
+
+(2) Why use Vite ? 
+-> Vite has faster build time and lighter setup. 
+
+package.json 
+
+npx and npm difference 
+
+
+package.lock json :- lock the version of the libraries 
+
+node module consist of all the data of libraries 
+
+
+StrictMode ---- used for checking any error strickly
+
+
+What is jsx :-> 
+->  JavaScript XML - its a syntax extension that allows us to write HTML like code inside JS.
+->  React uses babel for understanding/converting JSX 
+
+
+Rules of JSX ?
+->1 Jsx must return a single root element. either wrap them in div or <> </> this are called as fragment
+->2 When you want to your class you will not write class keyword you should write className 
+->3 Self closing tags must have a slash at the end (<img src="" alt="" />)   
+->4 If statement are not used in jsx
+->5 Whenever you create a jsx components the first letter should be Capital
+->6 Inline styling in components are in a object format with key value pairs 
