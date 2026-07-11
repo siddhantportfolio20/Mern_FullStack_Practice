@@ -1,0 +1,11 @@
+Prop are like functional parameters for components - they allow you to pass data from parent to child 
+from parent to child 
+
+prop has one way data flow 
+prop can be of any datatype : string , number ,boolean , array , object , function and JSX
+props can also be used as default props 
+
+A child cannot directly modify the parents Prop 
+
+the "children" key-word is reserved for passing html data as prop in components
+
