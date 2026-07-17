@@ -1,0 +1,13 @@
+we saw that when we try to update a valuer using normal JS variables the value gets updated 
+but it is not reflected on the screen this is because the components is not re rendering 
+
+unlike the normal HTML , JS when we update here the whole page rerenders this causes a lot of issues as comoponents and parts which do not need 
+re-render also re-render 
+
+
+react fixed this issue by only re-rendering that component which needs to updated 
+
+This is where State comes in 
+State is component memory its special data that 
+1. triggers a re-render of that component when it changes (solving the scre update problem )
+2. persists between renders 

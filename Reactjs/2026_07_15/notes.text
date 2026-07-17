@@ -1,0 +1,14 @@
+to use the class components functionality Hooks where introduced 
+
+------------------------------------- Hooks ---------------------------------
+
+hooks are special functions that let you "hook into" React features 
+we had class components before but then we transtioned into functional components
+hooks play a major role in makiing function components functional
+
+Rules of Hooks 
+1. Only call Hooks at the top of the function component
+    a. not inside a loop, condition , nested function, try catch , event handlers etc
+2. Only call hooks inside your function component
+
+laszy initialization :- 
