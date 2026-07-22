@@ -1,0 +1,19 @@
+lifting state up 
+
+
+useEffect : allows you to perform side effects in your components 
+// calculationn 
+// datafetching
+
+|----------------------------------------------------------|
+|Rendering Process           |       SideEffects           |
+|----------------------------------------------------------|
+|    Mounting                |       Show Current title    |
+|    componentDidMount       |                             |
+|----------------------------------------------------------|
+|   Updating                 |       Update title          |
+|    componentDidUpdate      |                             |
+|----------------------------------------------------------|
+|    Unmounting              |       Clear ongoing effects |
+|   componentWillUnmount     |                             |
+|----------------------------------------------------------|
