@@ -1,0 +1,44 @@
+Q1. Why is the real DOM expensive 
+--> DOM operation are relatively slow bc: 
+1. Browser must update the DOM tree 
+2. Browser recalculates styles
+3. Browser repaints pixels on screen 
+
+
+Virtual DOM
+its a lightweight JS representation of the Real DOM
+Instead of immediately changing the Browser DOM ,React creates a Virtual Copu
+THe copy exits entirely in the memory 
+
+# Working of VOD
+
+1. <h1>Hello</h1>
+
+2. React creates a copy
+{
+    type: "h1"
+    children: ["hello"]
+}
+3. Later the state changes react creates a new VOD
+{
+    type: "h1"
+    children: ["Hello world"]
+}
+
+4. The 2 DOM's that are created are now compared -> it detects that the text "hello" changes to "hello world"
+5. it will only update that particular part of the real DOM
+
+Diffing -> Comparing 2 VOD 
+Its the processs where the 2 DOM's are compare with each other to find the 
+difference between them 
+
+
+Reconciliation -> Algorithm that react uses to update the Real DOM 
+after finding the difference using Diffing
+
+# The full rendering processs
+
+State Changes -> New VOD -> Diffing -> Reconciliation -> Real DOM (changes are reflected) 
+
+Note : the key value should be unique for the elements that are repeating of maped using a list 
+these key values should be fixed to that element ie. avoid using index of the array as the key for that element 

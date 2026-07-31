@@ -1,0 +1,3 @@
+1. if we update the value of ref it does not trigger a rerender 
+2. ref presist/save the value between render (ie. rerender does not effect ref )
+
