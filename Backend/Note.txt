@@ -1,0 +1,43 @@
+Status codes  :- 
+| Category |    Range    | Meaning       | Description                                                                   |
+| -------- | :---------: | ------------- | ----------------------------------------------------------------------------- |
+| **1xx**  | **100–199** | Informational | The request has been received and the process is continuing.                  |
+| **2xx**  | **200–299** | Success       | The request was successfully received, understood, and processed.             |
+| **3xx**  | **300–399** | Redirection   | Further action is needed to complete the request (usually a redirect).        |
+| **4xx**  | **400–499** | Client Error  | The client sent an invalid request or requested something that doesn't exist. |
+| **5xx**  | **500–599** | Server Error  | The server failed to process a valid request due to an internal problem.      |
+
+Most Common Status Codes
+
+|    Code | Category | Meaning                    | Typical Express Usage                           |
+| ------: | -------- | -------------------------- | ----------------------------------------------- |
+| **100** | 1xx      | Continue                   | Rarely used directly                            |
+| **101** | 1xx      | Switching Protocols        | Used for WebSockets                             |
+| **200** | 2xx      | OK                         | Successful `GET`, `PUT`                         |
+| **201** | 2xx      | Created                    | Successful `POST`                               |
+| **202** | 2xx      | Accepted                   | Request accepted for later processing           |
+| **204** | 2xx      | No Content                 | Successful request with no response body        |
+| **301** | 3xx      | Moved Permanently          | Permanent redirect                              |
+| **302** | 3xx      | Found (Temporary Redirect) | Temporary redirect                              |
+| **304** | 3xx      | Not Modified               | Browser uses cached resource                    |
+| **400** | 4xx      | Bad Request                | Invalid request data                            |
+| **401** | 4xx      | Unauthorized               | Authentication required or failed               |
+| **403** | 4xx      | Forbidden                  | Authenticated but not allowed                   |
+| **404** | 4xx      | Not Found                  | Route or resource doesn't exist                 |
+| **405** | 4xx      | Method Not Allowed         | Wrong HTTP method                               |
+| **409** | 4xx      | Conflict                   | Duplicate resource (e.g., email already exists) |
+| **422** | 4xx      | Unprocessable Entity       | Validation failed                               |
+| **429** | 4xx      | Too Many Requests          | Rate limit exceeded                             |
+| **500** | 5xx      | Internal Server Error      | Unexpected server error                         |
+| **501** | 5xx      | Not Implemented            | Functionality not implemented                   |
+| **502** | 5xx      | Bad Gateway                | Invalid response from another server            |
+| **503** | 5xx      | Service Unavailable        | Server temporarily unavailable                  |
+| **504** | 5xx      | Gateway Timeout            | Upstream server took too long                   |
+
+Easy way to remember : Important
+  
+1xx → Information 📢
+2xx → Success ✅
+3xx → Redirect 🔄
+4xx → Client made a mistake ❌
+5xx → Server made a mistake 💥
