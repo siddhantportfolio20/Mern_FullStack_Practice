@@ -1,0 +1,8 @@
+redux : use for state/component management
+
+state_variable:
+{
+    todo:
+    adding friends Name:[]
+}
+

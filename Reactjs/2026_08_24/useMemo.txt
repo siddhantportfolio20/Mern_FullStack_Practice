@@ -1,0 +1,9 @@
+useMemo is a hook in react that let us remember results of functino between re-renders until dependecies are not changed 
+
+const result = useMemo(()=>function,[a,b]) --- memorize results of function 
+
+useCallback -->useMemo is a react Hook use for remembering function definatino between re-renders, memorize defination of function between re-renders 
+
+const sortiingFunction = useCallback(()=>function,[dependecies array]) --- memorize results of function 
+
+

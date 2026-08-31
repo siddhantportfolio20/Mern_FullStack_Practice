@@ -1,0 +1,4 @@
+useReducer 
+its a react hook used to manage state that changes in a structured way 
+its useful when state updates depends on a previous state or when multiple action update the same state 
+it makes logic easier to organize in large components 
