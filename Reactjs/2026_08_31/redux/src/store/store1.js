@@ -7,21 +7,25 @@ const initialState = {
     {
       id: 1,
       text: "Learn Redux",
+      completed: false,
     },
     {
       id: 2,
       text: "Learn React",
+      completed: true,
     },
     {
       id: 3,
       text: "Practice JavaScript",
+      completed: false,
     },
   ],
+
+  filter: "all",
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-
     case "INCREMENT":
       return {
         ...state,
@@ -46,6 +50,26 @@ const reducer = (state = initialState, action) => {
         todo: state.todo.filter(
           (todo) => todo.id !== action.payload
         ),
+      };
+
+    case "toggle":
+      return {
+        ...state,
+        todo: state.todo.map((todo) =>
+          todo.id === action.payload
+            ? {
+                ...todo,
+                completed: !todo.completed,
+              }
+            : todo
+        ),
+      };
+
+    // FILTER
+    case "FILTER_TODO":
+      return {
+        ...state,
+        filter: action.payload,
       };
 
     default:
