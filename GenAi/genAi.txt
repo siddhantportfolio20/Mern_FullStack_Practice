@@ -1,0 +1,6 @@
+LLM -> Large Language Model 
+
+// we gave a instruction and then we are getting a response back 
+// this is similar to the job of API
+ 
+// Context -> the details that we provide LLM for generating the response ? image doc , text , audio , video
